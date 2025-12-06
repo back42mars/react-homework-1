@@ -1,8 +1,9 @@
-// imperative
+// declarative
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
+// imperative
 function AppJS() {
 	let count = 0;
 
@@ -59,7 +60,7 @@ function AppJS() {
 	const currentYearHTML = document.createElement("h2");
 	currentYearHTML.textContent = currentYear;
 
-	appHTML.append(logosDivHTML, h1, card, readDocsHTML, currentYearHTML);
+	appHTML.append(logosDivHTML, h1, card, readDocsHTML, currentYearHTML, 'imperative');
 
 	return (
 		appHTML

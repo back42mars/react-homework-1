@@ -1,17 +1,16 @@
+// декларативный
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-// декларативный
+// императивный
 function App() {
   const [count, setCount] = useState(0)
-
-// императивный
   let currentYear = new Date().getFullYear();
 
-// декларативный
   return (
+	// декларативный
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
@@ -23,7 +22,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
+			{/* императивный */}
         <button onClick={() => setCount((count) => count + 1)}>
+			{/* декларативный */}
           count is {count}
         </button>
         <p>
